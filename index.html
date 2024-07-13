@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+    <script>
+        tailwind.config = {js,cjs,mjs,ts}
+    </script>
+
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+      .menu-hidden{
+        display: none;
+      }
+    </style>
+    <title>Hero & Skills</title>
+</head>
+<body class="bg-gray-800">
+
+  <nav class="bg-transparent p-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo/Name -->
+        <div class="flex items-center text-white text-lg font-medium">
+          <svg class="w-8 h-8 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9.75l8.485-8.485a1.5 1.5 0 012.12 0L22.5 9.75M16.5 21H7.5m4.5-3.75H6.75A2.25 2.25 0 014.5 15V9.75m14.25 0V15a2.25 2.25 0 01-2.25 2.25H13.5m-3 3.75v-7.5a1.5 1.5 0 113 0v7.5z"></path>
+          </svg>
+          Zain Rasool
+      </div>
+        <!-- Hamburger Menu Button -->
+        <button id="menu-button" class="block md:hidden text-white focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+        <!-- Navigation Links -->
+        <div id="menu-links" class="hidden md:flex space-x-10">
+            <a href="#" class="text-white hover:text-gray-400">Home</a>
+            <a href="#" class="text-white hover:text-gray-400">About</a>
+            <a href="#" class="text-white hover:text-gray-400">Contact Me</a>
+        </div>
+    </div>
+    <!-- Mobile Navigation Links -->
+    <div id="mobile-menu-links" class="menu-hidden md:hidden mt-2 space-y-2">
+        <a href="#" class="block text-white hover:text-gray-400">Home</a>
+        <a href="#" class="block text-white hover:text-gray-400">About</a>
+        <a href="#" class="block text-white hover:text-gray-400">Contact Me</a>
+    </div>
+</nav>
+    
+    <div class="w-full flex flex-col justify-center items-center bg-no-repeat bg-center bg-cover rounded" style="background-image: url('/Screenshot\ 2024-07-09\ 221315.png');">
+        <img class="rounded-full mt-20 mb-4 w-40 h-40 shadow-lg shadow-black" src="./Screenshot 2024-07-09 220748.png" alt="My img">
+        <h1 class="font-sans font-bold text-center text-5xl pt-4 pl-4 pr-4 text-white max-w-2xl">Curiosity. Passion. Mastery</h1>
+        <p class="font-sans font-light text-center text-2xl m-4 text-white max-w-4xl">
+            A Computer Science student willing to learn more and more about this ever evolving field.
+            Passionate about the world of programming, I am on a journey to master the art of software development. My toolkit has expanded to include a strong foundation in backend development, Git version control, and a growing expertise in HTML, CSS, and JavaScript. I also have a solid background in C and C++.
+            My curiosity drives me to explore and experiment, turning concepts into code and challenges into opportunities. I am dedicated to continuous learning and excited about the endless possibilities in the software development field.
+        </p>
+        <div class="container flex justify-center items-center">
+            <a href="#Projects">
+              <button class="bg-gray-500 flex items-center p-6 m-4 text-lg font-medium text-white rounded-xl hover:bg-gray-800 hover:transition-colors duration-1000 active:scale-y-95 active:scale-x-95">
+                My Projects
+                <svg class="ml-2 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </button>
+            </a>
+        </div>
+    </div>
+
+    <div class="text-3xl font-bold text-white p-4 m-4">Skills</div>
+    <hr class="border-gray-700 my-4">
+
+
+    <div class="flex flex-col items-center justify-center md:flex-row">
+      <div class="grid max-w-full my-auto md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
+        <div class="flex flex-col shadow-lg shadow-black rounded-md m-4 max-w-md">
+          <div class="flex flex-row">
+            <img class="w-6 h-6 ml-2 mt-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" />
+            <h2 class="text-white px-2 mt-2">JavaScript</h2>
+          </div>
+          <p class="p-2 text-white">Proficient knowledge of JavaScript include Object Oriented Programming and asynchronous Programming.
+          </p>
+        </div>
+        <div class="flex flex-col shadow-lg shadow-black rounded-md m-4 max-w-md">
+          <div class="flex flex-row">
+            <img class="w-6 h-6 ml-2 mt-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
+            <h2 class="text-white px-2 mt-2">C/C++</h2>
+          </div>
+          <p class="p-2 text-white">Extensive knwoledge of both system level languages including Data Structures in C++.
+             Also implemented multi-threading in C.
+          </p>
+        </div>
+        
+        <div class="flex flex-col shadow-lg shadow-black rounded-md m-4 max-w-md">
+          <div class="flex flex-row">
+            <img class="w-6 h-6 ml-2 mt-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" />
+            <h2 class="text-white px-2 mt-2">Express</h2>
+          </div>
+          <p class="p-2 text-white">Experience with express in building RESTful APIs with express framework consisting of basic CRUD operations.
+          </p>
+        </div>
+        
+        <div class="flex flex-col shadow-lg shadow-black rounded-md m-4 max-w-md">
+          <div class="flex flex-row mt-2">
+            <img class="w-6 h-6 ml-2 mt-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" />
+            <h2 class="text-white px-2">Node</h2>
+          </div>
+          <p class="p-2 text-white">
+            Worked with Node while working on express. Experienced with npm and node modules like sqlite3 and core modules.
+          </p>
+        </div>
+       </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="w-full mt-24">
+      <div class="w-full mx-auto p-6 bg-slate-700 rounded-lg shadow-md text-center" id="Projects">
+        <!-- SVG Icon -->
+        <svg class="w-24 h-24 mx-auto mb-4" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M1 20.2405C1 19.8207 1.3436 19.4805 1.76744 19.4805H22.2326C22.6564 19.4805 23 19.8207 23 20.2405C23 20.6602 22.6564 21.0005 22.2326 21.0005H1.76744C1.3436 21.0005 1 20.6602 1 20.2405Z" fill="#1C274C"></path>
+            <path opacity="0.5" d="M3.69013 3.8904C2.79102 4.78079 2.79102 6.21386 2.79102 9.08V14.1467C2.79102 16.0574 2.79102 17.0128 3.39042 17.6064C3.98983 18.2 4.95457 18.2 6.88404 18.2H17.1166C19.0461 18.2 20.0108 18.2 20.6102 17.6064C21.2096 17.0128 21.2096 16.0574 21.2096 14.1467V9.08C21.2096 6.21386 21.2096 4.78079 20.3105 3.8904C19.4114 3 17.9643 3 15.0701 3H8.93055C6.03635 3 4.58924 3 3.69013 3.8904Z" fill="#1C274C"></path>
+            <path d="M8.93053 14.4004C8.50668 14.4004 8.16309 14.7407 8.16309 15.1604C8.16309 15.5801 8.50668 15.9204 8.93053 15.9204H15.0701C15.4939 15.9204 15.8375 15.5801 15.8375 15.1604C15.8375 14.7407 15.4939 14.4004 15.0701 14.4004H8.93053Z" fill="#1C274C"></path>
+        </svg>
+        <!-- Title -->
+        <h2 class="text-3xl font-bold text-white mb-4">Move It</h2>
+        <!-- Description -->
+        <p class="text-white mb-6 text-2xl font-light">Homepage for a website which assists in moving items of all kind from one place to another.</p>
+        <!-- Button -->
+        <div class="flex justify-center mb-5">
+            <a href="https://zain4391.github.io/Move_it_landing/" target="_blank">
+                <button class="btn-primary rounded-full py-6 px-8 text-white text-xl bg-slate-500 hover:bg-slate-600 transition-colors duration-150">Check it out.</button>
+            </a>
+        </div>
+        
+    </div>
+
+    <div class="w-full mx-auto p-6 bg-slate-700 rounded-lg shadow-md text-center mt-3 mb-3">
+      <!-- SVG Icon -->
+      <svg class="w-24 h-24 mx-auto mb-4" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M1 20.2405C1 19.8207 1.3436 19.4805 1.76744 19.4805H22.2326C22.6564 19.4805 23 19.8207 23 20.2405C23 20.6602 22.6564 21.0005 22.2326 21.0005H1.76744C1.3436 21.0005 1 20.6602 1 20.2405Z" fill="#1C274C"></path>
+          <path opacity="0.5" d="M3.69013 3.8904C2.79102 4.78079 2.79102 6.21386 2.79102 9.08V14.1467C2.79102 16.0574 2.79102 17.0128 3.39042 17.6064C3.98983 18.2 4.95457 18.2 6.88404 18.2H17.1166C19.0461 18.2 20.0108 18.2 20.6102 17.6064C21.2096 17.0128 21.2096 16.0574 21.2096 14.1467V9.08C21.2096 6.21386 21.2096 4.78079 20.3105 3.8904C19.4114 3 17.9643 3 15.0701 3H8.93055C6.03635 3 4.58924 3 3.69013 3.8904Z" fill="#1C274C"></path>
+          <path d="M8.93053 14.4004C8.50668 14.4004 8.16309 14.7407 8.16309 15.1604C8.16309 15.5801 8.50668 15.9204 8.93053 15.9204H15.0701C15.4939 15.9204 15.8375 15.5801 15.8375 15.1604C15.8375 14.7407 15.4939 14.4004 15.0701 14.4004H8.93053Z" fill="#1C274C"></path>
+      </svg>
+      <!-- Title -->
+      <h2 class="text-3xl font-bold text-white mb-4">Excursion Landing Page</h2>
+      <!-- Description -->
+      <p class="text-white mb-6 text-2xl font-light">Landing page about a software for capturing and editing photos and vidoes to share on social media.</p>
+      <!-- Button -->
+      <div class="flex justify-center mb-5">
+          <a href="https://zain4391.github.io/excursion/" target="_blank">
+              <button class="btn-primary rounded-full py-6 px-8 text-white text-xl font-medium bg-slate-500 hover:bg-slate-600 transition-colors duration-150">Check it out.</button>
+          </a>
+      </div>
+
+  </div>
+
+    <div class="w-full mx-auto p-6 bg-slate-700 rounded-lg shadow-md text-center mt-3">
+      <!-- SVG Icon -->
+      <svg class="w-24 h-24 mx-auto mb-4" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M1 20.2405C1 19.8207 1.3436 19.4805 1.76744 19.4805H22.2326C22.6564 19.4805 23 19.8207 23 20.2405C23 20.6602 22.6564 21.0005 22.2326 21.0005H1.76744C1.3436 21.0005 1 20.6602 1 20.2405Z" fill="#1C274C"></path>
+          <path opacity="0.5" d="M3.69013 3.8904C2.79102 4.78079 2.79102 6.21386 2.79102 9.08V14.1467C2.79102 16.0574 2.79102 17.0128 3.39042 17.6064C3.98983 18.2 4.95457 18.2 6.88404 18.2H17.1166C19.0461 18.2 20.0108 18.2 20.6102 17.6064C21.2096 17.0128 21.2096 16.0574 21.2096 14.1467V9.08C21.2096 6.21386 21.2096 4.78079 20.3105 3.8904C19.4114 3 17.9643 3 15.0701 3H8.93055C6.03635 3 4.58924 3 3.69013 3.8904Z" fill="#1C274C"></path>
+          <path d="M8.93053 14.4004C8.50668 14.4004 8.16309 14.7407 8.16309 15.1604C8.16309 15.5801 8.50668 15.9204 8.93053 15.9204H15.0701C15.4939 15.9204 15.8375 15.5801 15.8375 15.1604C15.8375 14.7407 15.4939 14.4004 15.0701 14.4004H8.93053Z" fill="#1C274C"></path>
+      </svg>
+      <!-- Title -->
+      <h2 class="text-3xl font-bold text-white mb-4">Courier Delivery System</h2>
+      <!-- Description -->
+      <p class="text-white mb-6 text-2xl font-light">
+          Applied my knowledge of Data Structures and algorithms to develop a courier system in C++. Allows manager to add employees and see pending parcels, while employee deliver them through optimized Prim's MST.
+      </p>
+      <!-- Button -->
+      <div class="flex justify-center mb-5">
+          <a href="https://github.com/Zain4391/DSA-project" target="_blank">
+              <button class="rounded-full py-6 px-8 text-white text-xl bg-slate-500 hover:bg-slate-600 transition-colors duration-150">Check it out.</button>
+          </a>
+      </div>
+  </div>
+
+  <div class="w-full mx-auto p-6 bg-slate-700 rounded-lg shadow-md text-center mt-3">
+    <!-- SVG Icon -->
+    <svg class="w-24 h-24 mx-auto mb-4" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1 20.2405C1 19.8207 1.3436 19.4805 1.76744 19.4805H22.2326C22.6564 19.4805 23 19.8207 23 20.2405C23 20.6602 22.6564 21.0005 22.2326 21.0005H1.76744C1.3436 21.0005 1 20.6602 1 20.2405Z" fill="#1C274C"></path>
+        <path opacity="0.5" d="M3.69013 3.8904C2.79102 4.78079 2.79102 6.21386 2.79102 9.08V14.1467C2.79102 16.0574 2.79102 17.0128 3.39042 17.6064C3.98983 18.2 4.95457 18.2 6.88404 18.2H17.1166C19.0461 18.2 20.0108 18.2 20.6102 17.6064C21.2096 17.0128 21.2096 16.0574 21.2096 14.1467V9.08C21.2096 6.21386 21.2096 4.78079 20.3105 3.8904C19.4114 3 17.9643 3 15.0701 3H8.93055C6.03635 3 4.58924 3 3.69013 3.8904Z" fill="#1C274C"></path>
+        <path d="M8.93053 14.4004C8.50668 14.4004 8.16309 14.7407 8.16309 15.1604C8.16309 15.5801 8.50668 15.9204 8.93053 15.9204H15.0701C15.4939 15.9204 15.8375 15.5801 15.8375 15.1604C15.8375 14.7407 15.4939 14.4004 15.0701 14.4004H8.93053Z" fill="#1C274C"></path>
+    </svg>
+    <!-- Title -->
+    <h2 class="text-3xl font-bold text-white mb-4">Libarary Management API</h2>
+    <!-- Description -->
+    <p class="text-white mb-6 text-2xl font-light">
+      Made a robust RESTful API via express framework with routes defined to handle CRUD operations. Tested it's functionality with Postman.
+    </p>
+    <!-- Button -->
+    <div class="flex justify-center mb-5">
+        <a href="https://github.com/Zain4391/Lib_management/tree/main" target="_blank">
+            <button class="rounded-full py-6 px-8 text-white text-xl bg-slate-500 hover:bg-slate-600 transition-colors duration-150">Check it out.</button>
+        </a>
+    </div>
+  </div>
+
+    <div class="p-5 mb-4 bg-gray-300 rounded-lg bg-cover bg-no-repeat" id="About" style="background-image: url('/img2.jpg');">
+      <div class="container mx-auto py-5">
+          <h1 class="text-3xl font-bold underline mb-4 text-white ml-4">About Me</h1>
+          <p class="text-lg text-white leading-relaxed max-w-lg opacity-100 ml-4">
+              I began my academic journey with O levels at HPGS, where I achieved outstanding results with 2 As in Mathematics and Computer Science. Continuing my pursuit of excellence, I completed my A levels at Cedar, securing 3 As in Mathematics, Physics, and Computer Science. Currently, I am enrolled at FAST Karachi, where I am honing my skills and knowledge in computer science, with an expected graduation in 2026. My passion lies in web and software development, and I am committed to becoming a proficient developer in this ever-evolving field.
+          </p>
+          <div class="flex">
+              <a href="https://zain4391.github.io/Resume/" target="_blank" class="inline-flex items-center ml-4 mt-4 bg-slate-500 hover:bg-slate-600 text-white font-bold py-2 px-4 rounded-lg">
+                  My Resume
+                  <svg xmlns="http://www.w3.org/2000/svg" height="20" fill="currentColor" class="bi bi-arrow-right-circle ml-2" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"></path>
+                  </svg>
+              </a>
+          </div>
+      </div>
+  </div>
+
+  <div class="container">
+    <footer class="flex flex-wrap justify-between items-center py-3 my-4">
+        <div class="flex items-center col-span-4 md:col-span-2">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-gray-500 text-decoration-none">
+                <svg class="bi h-6 w-5" viewBox="0 0 16 16" fill="currentColor">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-gray-500">&copy; 2024 Zain Rasool Hashmi. All Rights Reserved.</span>
+        </div>
+
+        <ul class="flex col-span-4 md:col-span-2 justify-end list-none">
+            <li class="ms-3">
+                <a href="https://www.facebook.com/share/Ss8qUtWEsZ24nMyq/?mibextid=qi2Omg"
+                    class="text-gray-500 hover:text-gray-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20" fill="currentColor" class="bi bi-facebook"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951">
+                        </path>
+                    </svg>
+                </a>
+            </li>
+            <li class="ms-3">
+                <a href="https://www.instagram.com/zain___rasool?utm_source=qr&amp;igsh=MTZtejlmMmo5cWp4bw=="
+                    class="text-gray-500 hover:text-gray-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20" fill="currentColor" class="bi bi-instagram"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334">
+                        </path>
+                    </svg>
+                </a>
+            </li>
+            <li class="ms-3">
+                <a href="https://www.linkedin.com/in/zain-rasool-hashmi-947bb424b/"
+                    class="text-gray-500 hover:text-gray-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20" fill="currentColor"
+                        class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z">
+                        </path>
+                    </svg>
+                </a>
+            </li>
+            <li class="ms-3">
+                <a href="https://github.com/Zain4391" class="text-gray-500 hover:text-gray-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20" fill="currentColor" class="bi bi-github"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</div>
+
+</div>
+         
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+  <script>
+    document.getElementById('menu-button').addEventListener('click', function() {
+        let menuLinks = document.getElementById('mobile-menu-links');
+        if (menuLinks.classList.contains('menu-hidden')) {
+            menuLinks.classList.remove('menu-hidden');
+        } else {
+            menuLinks.classList.add('menu-hidden');
+        }
+    });
+</script>
+</body>
+</html>
